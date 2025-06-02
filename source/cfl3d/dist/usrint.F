@@ -41,9 +41,6 @@ c
 c
       common /mydist2/ nnodes,myhost,myid,mycomm
 c
-      errfile = 'cfl3d.error'
-      open(unit=99,file=errfile,form='formatted',status='unknown')
-c
       ierrflg = -999
       write(99,99) ierrflg
    99 format(' error code:',/,i4)
